@@ -1,55 +1,47 @@
-<div class="d-flex justify-content-center mt-3 header pointer" routerLink="/"></div>
-<div class="container">
+<div class="d-flex justify-content-center mt-3 header pointer" routerLink="/" id="all"></div>
+<app-navbar-products (selectOption)="scroll($event)"></app-navbar-products>
+<hr />
+<div class="container" id="all">
   <div class="row">
-    <div class="col-12 d-flex justify-content-evenly header-link">
-      <p class="text-center pointer" (click)="scroll(proceedings)">Actas</p>
-      <p class="text-center pointer" (click)="scroll(file)">Carpeta</p>
-      <p class="text-center pointer" (click)="scroll(accompaniment)">Acompañamiento</p>
-      <p class="text-center pointer" (click)="scroll(guide)">Te Guiamos</p>
-      <p class="text-center pointer" (click)="scroll(advisory)">Asesoría</p>
-      <p class="text-center pointer" (click)="scroll(apostille)">Apostillado</p>
-      <p class="text-center pointer" (click)="scroll(proceedings)">Expediente</p>
-      <p class="text-center pointer" (click)="scroll(control)">Control carpeta</p>
-    </div>
-    <hr />
-    <div class="col-12 container-data" #proceedings id="proceedings">
+    <div class="col-12 container-data" #searchProceedings id="searchProceedings">
       <p class="title">BÚSQUEDA DE ACTAS</p>
       <p class="subtitle">
-        Nos encargamos de contactar al comune, enviar emails PEC y sobres prefranqueados, según los requisitos de cada oficina, para obtener las actas
-        de nacimiento, matrimonio y defunción italianas que necesites.
+        Nos encargamos de contactar al comune, enviar emails PEC y sobres prefranqueados, según los requisitos de cada oficina,
+        para obtener las actas de nacimiento, matrimonio y defunción italianas que necesites.
       </p>
       <p class="subtitle">
-        Si dispones de todos los datos necesarios para la búsqueda (nombres y apellidos completos, fecha exacta y lugar del acontecimiento), no
-        necesitas pagar nada por adelantado. Solo abonas cuando te enviamos el acta a tu domicilio.
+        Si dispones de todos los datos necesarios para la búsqueda (nombres y apellidos completos, fecha exacta y lugar del
+        acontecimiento), no necesitas pagar nada por adelantado. Solo abonas cuando te enviamos el acta a tu domicilio.
       </p>
       <p class="subtitle">
-        Si solo contas con una fecha estimada (rango menor a 3 años), consultanos por nuestro servicio de investigación para ver cómo podemos
-        ayudarte.
+        Si solo contas con una fecha estimada (rango menor a 3 años), consultanos por nuestro servicio de investigación para ver
+        cómo podemos ayudarte.
       </p>
     </div>
     <div class="col-12 container-data background-light" #file id="file">
       <p class="title">ARMADO DE CARPETA</p>
       <p class="subtitle">
-        ¿Buscas obtener el reconocimiento de tu ciudadanía italiana de manera eficiente y sin complicaciones? Nuestro servicio de armado de carpeta
-        completa es la solución perfecta para vos.
+        ¿Buscas obtener el reconocimiento de tu ciudadanía italiana de manera eficiente y sin complicaciones? Nuestro servicio de
+        armado de carpeta completa es la solución perfecta para vos.
       </p>
       <p class="subtitle">
-        Nos encargamos de estudiar y evaluar exhaustivamente toda la documentación e información inicial que tengas sobre tu árbol genealógico para
-        determinar si cumples con los requisitos del consulado para obtener el reconocimiento de la ciudadanía italiana.
+        Nos encargamos de estudiar y evaluar exhaustivamente toda la documentación e información inicial que tengas sobre tu árbol
+        genealógico para determinar si cumples con los requisitos del consulado para obtener el reconocimiento de la ciudadanía
+        italiana.
       </p>
       <p class="subtitle">
-        Con esta información, sabremos tu punto de partida y podremos asegurarnos de que tu carpeta y solicitud cumplan con todos los requisitos. Te
-        entregamos la carpeta lista para ser presentada tanto en Argentina como en Italia.
+        Con esta información, sabremos tu punto de partida y podremos asegurarnos de que tu carpeta y solicitud cumplan con todos
+        los requisitos. Te entregamos la carpeta lista para ser presentada tanto en Argentina como en Italia.
       </p>
       <p class="subtitle">Profesionalismo y Experiencia</p>
       <p class="subtitle">
-        Contamos con un equipo de expertos en ciudadanía italiana, con más de tres años de experiencia en el armado de carpetas. Nos aseguramos de que
-        tu solicitud cumpla con todos los requisitos.
+        Contamos con un equipo de expertos en ciudadanía italiana, con más de tres años de experiencia en el armado de carpetas.
+        Nos aseguramos de que tu solicitud cumpla con todos los requisitos.
       </p>
       <p class="subtitle">Ahorro de Tiempo y Esfuerzo</p>
       <p class="subtitle">
-        Nos encargamos de todos los aspectos complejos y burocráticos del proceso, asegurando un trámite claro y eficiente, permitiéndote concentrarte
-        en otras cosas importantes.
+        Nos encargamos de todos los aspectos complejos y burocráticos del proceso, asegurando un trámite claro y eficiente,
+        permitiéndote concentrarte en otras cosas importantes.
       </p>
       <p class="subtitle">¿Qué incluye nuestro servicio?</p>
       <ul>
@@ -64,49 +56,53 @@
         <li>Presupuesto Personalizado según la Complejidad del Caso</li>
       </ul>
       <p class="subtitle">
-        Tene en cuenta que para poder iniciar con este servicio, necesitas contar con información de tu árbol familiar. Datos necesarios del tipo:
-        Lugares, nombres completos y fechas de acontecimientos como nacimientos, matrimonios y defunciones.
+        Tene en cuenta que para poder iniciar con este servicio, necesitas contar con información de tu árbol familiar. Datos
+        necesarios del tipo: Lugares, nombres completos y fechas de acontecimientos como nacimientos, matrimonios y defunciones.
       </p>
       <p class="subtitle">
-        Para la solicitud de la ciudadanía italiana solo se necesitan los datos y documentos, desde el AVO (primera persona nacida en Italia, que
-        emigró y tuvo sus descendientes en Argentina) hasta vos. SOLO EN LÍNEA RECTA. (Abuelos o Abuelas /Padres o madres / Hijos - hijas). No son
-        imprescindibles datos de cónyuges, tíos, primos.
+        Para la solicitud de la ciudadanía italiana solo se necesitan los datos y documentos, desde el AVO (primera persona nacida
+        en Italia, que emigró y tuvo sus descendientes en Argentina) hasta vos. SOLO EN LÍNEA RECTA. (Abuelos o Abuelas /Padres o
+        madres / Hijos - hijas). No son imprescindibles datos de cónyuges, tíos, primos.
       </p>
     </div>
     <div class="col-12 container-data" #accompaniment id="accompaniment">
       <p class="title">ACOMPAÑAMIENTO EN ITALIA</p>
       <p class="subtitle">
-        Aunque el trámite de reconocimiento de la ciudadanía es personal y podés hacerlo por tu cuenta, entendemos que el proceso de emigrar puede ser
-        abrumador, y la ansiedad de la espera puede jugarte una mala pasada.
+        Aunque el trámite de reconocimiento de la ciudadanía es personal y podés hacerlo por tu cuenta, entendemos que el proceso
+        de emigrar puede ser abrumador, y la ansiedad de la espera puede jugarte una mala pasada.
       </p>
       <p class="subtitle">
-        Ya sea porque no conocés los pasos a seguir, no hablás el idioma, o simplemente querés vivir esta experiencia de manera relajada y sin
-        preocuparte por nada, nuestro servicio es ideal para vos.
+        Ya sea porque no conocés los pasos a seguir, no hablás el idioma, o simplemente querés vivir esta experiencia de manera
+        relajada y sin preocuparte por nada, nuestro servicio es ideal para vos.
       </p>
       <p class="subtitle">
-        Ofrecemos diferentes tipos de acompañamiento en Torino, para que puedas realizar tu reconocimiento sin sobresaltos y sintiéndote cómodo y
-        asistido durante este recorrido.
+        Ofrecemos diferentes tipos de acompañamiento en Torino, para que puedas realizar tu reconocimiento sin sobresaltos y
+        sintiéndote cómodo y asistido durante este recorrido.
       </p>
       <p class="subtitle">¡No dejes que el miedo te paralice!</p>
       <p class="subtitle">
-        Nosotros también pasamos por lo mismo alguna vez, y sabemos lo importante que es sentirse acompañado y rodeado de personas honestas,
-        confiables y buena onda, durante este proceso.
+        Nosotros también pasamos por lo mismo alguna vez, y sabemos lo importante que es sentirse acompañado y rodeado de personas
+        honestas, confiables y buena onda, durante este proceso.
       </p>
-      <p class="subtitle">Tu sueño de ser ciudadano italiano y tener pasaporte europeo en mano, es mucho más accesible de lo que pensas</p>
+      <p class="subtitle">
+        Tu sueño de ser ciudadano italiano y tener pasaporte europeo en mano, es mucho más accesible de lo que pensas
+      </p>
     </div>
     <div class="col-12 container-data background-light" #guide id="guide">
       <p class="title">ARMÁ TU CARPETA VOS MISMO, NOSOTROS TE GUIAMOS</p>
       <p class="subtitle">
-        Nuestro servicio "Guía Passo dopo Passo" está diseñado para ayudarte a preparar tu carpeta vos mismo para la presentación, proporcionándote
-        orientación y apoyo en cada paso del proceso.
+        Nuestro servicio "Guía Passo dopo Passo" está diseñado para ayudarte a preparar tu carpeta vos mismo para la presentación,
+        proporcionándote orientación y apoyo en cada paso del proceso.
       </p>
       <p class="subtitle">
-        Te acompañamos de manera virtual a través de WhatsApp, emails y videollamadas, ofreciéndote instrucciones claras y detalladas para cada etapa
-        del proceso burocrático relacionado con el armado de tu expediente familiar, desde la solicitud y obtención de documentos hasta la
-        presentación final.
+        Te acompañamos de manera virtual a través de WhatsApp, emails y videollamadas, ofreciéndote instrucciones claras y
+        detalladas para cada etapa del proceso burocrático relacionado con el armado de tu expediente familiar, desde la solicitud
+        y obtención de documentos hasta la presentación final.
       </p>
       <p class="subtitle">Autonomía Guiada</p>
-      <p class="subtitle">Aprende a gestionar tu propia solicitud con la seguridad de contar con la guía de un experto a tu lado.</p>
+      <p class="subtitle">
+        Aprende a gestionar tu propia solicitud con la seguridad de contar con la guía de un experto a tu lado.
+      </p>
       <p class="subtitle">Ahorro de Dinero y Tiempo</p>
       <p class="subtitle">Evita errores costosos y demoras gracias a nuestra orientación y acompañamiento.</p>
       <p class="subtitle">¿Qué incluye nuestro servicio?</p>
@@ -119,28 +115,30 @@
         <li>Solicitud del Acta de Nacimiento del AVO por Nosotros</li>
       </ul>
       <p class="subtitle">
-        Tene en cuenta que para poder iniciar con este servicio, necesitas contar con información de tu árbol familiar. Datos necesarios del tipo:
-        Lugares, nombres completos y fechas de acontecimientos como nacimientos, matrimonios y defunciones.
+        Tene en cuenta que para poder iniciar con este servicio, necesitas contar con información de tu árbol familiar. Datos
+        necesarios del tipo: Lugares, nombres completos y fechas de acontecimientos como nacimientos, matrimonios y defunciones.
       </p>
       <p class="subtitle">
-        Para la solicitud de la ciudadanía italiana solo se necesitan los datos y documentos, desde el AVO (primera persona nacida en Italia, que
-        emigró y tuvo sus descendientes en Argentina) hasta vos. SOLO EN LÍNEA RECTA. (Abuelos o Abuelas /Padres o madres / Hijos - hijas). No son
-        imprescindibles datos de cónyuges, tíos, primos.
+        Para la solicitud de la ciudadanía italiana solo se necesitan los datos y documentos, desde el AVO (primera persona nacida
+        en Italia, que emigró y tuvo sus descendientes en Argentina) hasta vos. SOLO EN LÍNEA RECTA. (Abuelos o Abuelas /Padres o
+        madres / Hijos - hijas). No son imprescindibles datos de cónyuges, tíos, primos.
       </p>
     </div>
     <div class="col-12 container-data" #advisory id="advisory">
       <p class="title">ASESORÍA PERSONALIZADA</p>
-      <p class="subtitle">¿No sabes por dónde empezar y necesitas orientación? Tenemos la solución para que puedas acomodar tus ideas.</p>
+      <p class="subtitle">
+        ¿No sabes por dónde empezar y necesitas orientación? Tenemos la solución para que puedas acomodar tus ideas.
+      </p>
       <p class="subtitle">Asesoría Personalizada</p>
       <p class="subtitle">
-        Ofrecemos una videollamada (Full o Smart) en la que te proporcionamos toda la información necesaria para resolver tus inquietudes sobre el
-        trámite, tanto en general como en tu caso particular.
+        Ofrecemos una videollamada (Full o Smart) en la que te proporcionamos toda la información necesaria para resolver tus
+        inquietudes sobre el trámite, tanto en general como en tu caso particular.
       </p>
       <p class="subtitle">Dándote referencias y un paso a paso para que sepas cómo continuar.</p>
       <p class="subtitle">Información Integral</p>
       <p class="subtitle">
-        Te brindamos detalles sobre el proceso de armado de carpeta y casos particulares, así como información sobre el estilo de vida en Italia, en
-        caso de que tu idea sea emigrar.
+        Te brindamos detalles sobre el proceso de armado de carpeta y casos particulares, así como información sobre el estilo de
+        vida en Italia, en caso de que tu idea sea emigrar.
       </p>
       <p class="subtitle">Podemos guiarte desde el principio y asegurarte un proceso claro y eficiente.</p>
       <p class="subtitle">Asesoría Full: 1:30hs.</p>
@@ -154,19 +152,20 @@
     <div class="col-12 container-data" #proceedings id="proceedings">
       <p class="title">ACTUALIZACIÓN DE EXPEDIENTE</p>
       <p class="subtitle">
-        ¿Contas con la carpeta armada pero los documentos ya tienen varios años y queres actualizarlos para la presentación? Lo hacemos por vos,
-        dejando todo listo y en perfectas condiciones para que puedas avanzar con tu trámite.
+        ¿Contas con la carpeta armada pero los documentos ya tienen varios años y queres actualizarlos para la presentación? Lo
+        hacemos por vos, dejando todo listo y en perfectas condiciones para que puedas avanzar con tu trámite.
       </p>
     </div>
     <div class="col-12 container-data background-light" #control id="control">
       <p class="title">CONTROL DE CARPETA</p>
       <p class="subtitle">
-        ¿Armaste tu legajo por tu cuenta y queres asegurarte de que cumple con todos los requisitos necesarios para la presentación?
+        ¿Armaste tu legajo por tu cuenta y queres asegurarte de que cumple con todos los requisitos necesarios para la
+        presentación?
       </p>
       <p class="subtitle">
-        Ofrecemos un servicio de control riguroso de todos tus documentos para garantizar que cumplen con los requisitos solicitados por el consulado
-        o la comuna italiana. Además, te orientamos sobre los pasos a seguir en caso de detectar posibles errores, asegurándote un proceso sin
-        contratiempos.
+        Ofrecemos un servicio de control riguroso de todos tus documentos para garantizar que cumplen con los requisitos
+        solicitados por el consulado o la comuna italiana. Además, te orientamos sobre los pasos a seguir en caso de detectar
+        posibles errores, asegurándote un proceso sin contratiempos.
       </p>
     </div>
   </div>

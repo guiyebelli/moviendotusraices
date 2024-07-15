@@ -11,7 +11,9 @@ import { FooterComponent } from './components/footer/footer.component'
 import { HeaderComponent } from './components/header/header.component';
 import { CityComponent } from './components/city/city.component';
 import { LandingComponent } from './components/landing/landing.component';
-import { AllProductsComponent } from './components/all-products/all-products.component'
+import { AllProductsComponent } from './components/all-products/all-products.component';
+import { NavbarLandingComponent } from './components/navbar-landing/navbar-landing.component';
+import { NavbarProductsComponent } from './components/navbar-products/navbar-products.component'
 
 @NgModule({
   declarations: [
@@ -24,6 +26,8 @@ import { AllProductsComponent } from './components/all-products/all-products.com
     CityComponent,
     LandingComponent,
     AllProductsComponent,
+    NavbarLandingComponent,
+    NavbarProductsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

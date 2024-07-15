@@ -6,7 +6,10 @@ import { Component } from '@angular/core'
   styleUrl: './landing.component.scss',
 })
 export class LandingComponent {
-  scroll(el: HTMLElement) {
-    el.scrollIntoView()
+  scroll(section: string) {
+    const element = document.getElementById(section)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 }

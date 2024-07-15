@@ -6,22 +6,20 @@ import { ActivatedRoute } from '@angular/router'
   templateUrl: './all-products.component.html',
   styleUrl: './all-products.component.scss',
 })
-export class AllProductsComponent implements OnInit, AfterViewInit {
+export class AllProductsComponent implements AfterViewInit {
   constructor(private route: ActivatedRoute) {}
-
-  ngOnInit(): void {}
 
   ngAfterViewInit(): void {
     setTimeout(() => {
       const section = this.route.snapshot.params['sectionId']
-      const element = document.getElementById(section)
-      if (section !== 'all' && element) {
-        element.scrollIntoView({ behavior: 'smooth' })
-      }
+      this.scroll(section)
     }, 100)
   }
 
-  scroll(el: HTMLElement) {
-    el.scrollIntoView()
+  scroll(section: string) {
+    const element = document.getElementById(section)
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' })
+    }
   }
 }

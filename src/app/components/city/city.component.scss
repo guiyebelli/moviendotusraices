@@ -1,4 +1,10 @@
-.pass {
-  height: 500px;
-  width: 500px;
+.img-pass {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  .subtitle {
+    padding-top: 20px;
+  }
 }

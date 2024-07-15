@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <button
+      (click)="toggleNavbarCollapsing()"
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarTogglerDemo02"
+      aria-controls="navbarTogglerDemo02"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02" [class.collapse]="navbarCollapsed">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" (click)="selectEmit('searchProceedings')">Actas</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" (click)="selectEmit('file')">Carpeta</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" (click)="selectEmit('accompaniment')">Acompañamiento</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" (click)="selectEmit('guide')">Te Guiamos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" (click)="selectEmit('advisory')">Asesoría</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" (click)="selectEmit('apostille')">Apostillado</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" (click)="selectEmit('proceedings')">Expediente</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" (click)="selectEmit('control')">Control carpeta</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- <div class="col-12 d-flex justify-content-evenly header-link">
+      <p class="text-center pointer" (click)="scroll(proceedings)">Actas</p>
+      <p class="text-center pointer" (click)="scroll(file)">Carpeta</p>
+      <p class="text-center pointer" (click)="scroll(accompaniment)">Acompañamiento</p>
+      <p class="text-center pointer" (click)="scroll(guide)">Te Guiamos</p>
+      <p class="text-center pointer" (click)="scroll(advisory)">Asesoría</p>
+      <p class="text-center pointer" (click)="scroll(apostille)">Apostillado</p>
+      <p class="text-center pointer" (click)="scroll(proceedings)">Expediente</p>
+      <p class="text-center pointer" (click)="scroll(control)">Control carpeta</p>
+    </div> -->
