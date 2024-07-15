@@ -1,0 +1,23 @@
+<app-header></app-header>
+<div class="row">
+  <div class="col-12 d-flex justify-content-evenly header-link">
+    <p class="text-center pointer" (click)="scroll(home)">Nosotros</p>
+    <p class="text-center pointer" (click)="scroll(services)">Servicios</p>
+    <p class="text-center pointer" (click)="scroll(city)">La Ciudad</p>
+    <p class="text-center pointer" (click)="scroll(contact)">Contacto</p>
+  </div>
+  <hr />
+  <div class="col-12" #home>
+    <app-presentation></app-presentation>
+  </div>
+  <div class="col-12" #services>
+    <app-products></app-products>
+  </div>
+  <div class="col-12" #city>
+    <app-city></app-city>
+  </div>
+  <div class="col-12 pt-5" #contact>
+    <app-contact></app-contact>
+  </div>
+</div>
+<app-footer></app-footer>

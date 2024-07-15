@@ -1,0 +1,22 @@
+@font-face {
+  font-family: 'my_NunitoSans_font';
+  src: url('./NunitoSans-Light.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'my_Cardinal-Valentino_font';
+  src: url('./Cardinal-Valentino.ttf') format('opentype');
+}
+
+@font-face {
+  font-family: 'my_BergenSans-SemiBold_font';
+  src: url('./BergenSans-SemiBold.otf') format('opentype');
+}
+@font-face {
+  font-family: 'my_BergenSans_font';
+  src: url('./BergenSans.ttf') format('opentype');
+}
+@font-face {
+  font-family: 'my_GlacialIndifference_font';
+  src: url('./GlacialIndifference-Regular.otf') format('opentype');
+}

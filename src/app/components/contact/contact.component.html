@@ -1,0 +1,28 @@
+<section>
+  <div class="container pt-4">
+    <div class="row d-flex justify-content-end align-items-center">
+      <div class="col-3">
+        <p class="title">CONTACTO</p>
+        <hr />
+        <p>¿Cómo podemos ayudarte?</p>
+        <div class="d-flex my-3">
+          <img class="icon align-self-center" src="./assets/images/icons/point.png" alt="email" />
+          <span class="align-self-center ps-2">{{ location }}</span>
+        </div>
+        <div class="d-flex my-3 pointer" (click)="goToWhatsapp()">
+          <img class="icon align-self-center" src="./assets/images/icons/whatsapp.png" alt="whatsapp" />
+
+          <span class="align-self-center ps-2">{{ phone }}</span>
+        </div>
+        <div class="d-flex my-3">
+          <img class="icon align-self-center" src="./assets/images/icons/email.png" alt="email" />
+          <span class="align-self-center ps-2">{{ email }}</span>
+        </div>
+        <div class="d-flex my-3 pointer" (click)="goToLink()">
+          <img class="icon align-self-center" src="./assets/images/icons/instagram.png" alt="instagram" />
+          <span class="align-self-center ps-2">{{ instagram }}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,60 @@
+<section class="section-container">
+  <div class="container">
+    <div class="row">
+      <div class="header col-12 text-center">
+        <p class="title">NUESTROS SERVICIOS</p>
+        <!-- <p class="subtitle">Te contamos todos los servicios que ofrecemos para que puedas realizar tu ciudadanía italiana.</p> -->
+      </div>
+      <div class="col-12">
+        <div class="row">
+          @for (p of allProducts; track p.name) {
+          <!-- <div class="col-4 p-3">
+            <div class="card">
+              <div class="p-3">
+                <span class="d-flex justify-content-center py-2">
+                  <img class="icon" [src]="p.icon" [alt]="p.icon" />
+                </span>
+                <p class="text-center title">{{ p.name }}</p>
+                <p class="description" [innerHTML]="p.description"></p>
+                <p class="text-center link" [routerLink]="p.router">+ Info</p>
+              </div>
+            </div>
+          </div> -->
+          <div class="col-4 p-3">
+            <div class="flip-box link" [routerLink]="p.router">
+              <div class="flip-box-inner">
+                <div class="flip-box-front">
+                  <div class="p-3">
+                    <span class="d-flex justify-content-center py-2">
+                      <img class="icon" [src]="p.icon" [alt]="p.icon" />
+                    </span>
+                    <p class="text-center title">{{ p.name }}</p>
+                    <p class="description" [innerHTML]="p.description"></p>
+                  </div>
+                </div>
+                <div class="flip-box-back">
+                  <div class="h-100 d-flex justify-content-center align-items-center">
+                    <!-- <h2>Back Side</h2> -->
+                    <p class="text-center p-0">+ Info</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          }
+          <div class="col-4 p-3 link" routerLink="/services/all">
+            <div class="flip-box">
+              <div class="flip-box-front">
+                <div class="h-100 d-flex flex-column justify-content-center align-items-center">
+                  <h2 class="text-center">+</h2>
+                  <p class="text-center m-0">Tu ciudadanía,</p>
+                  <p class="text-center m-0">a un click de hacerse realidad</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
