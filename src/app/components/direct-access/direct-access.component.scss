@@ -1,0 +1,14 @@
+.icon {
+  height: 30px;
+  width: 30px;
+}
+.round {
+  padding: 10px;
+  border-radius: 50%;
+  &.whatsapp {
+    background-color: #4dc247;
+  }
+  &.instagram {
+    background: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  }
+}

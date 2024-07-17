@@ -13,7 +13,8 @@ import { CityComponent } from './components/city/city.component';
 import { LandingComponent } from './components/landing/landing.component';
 import { AllProductsComponent } from './components/all-products/all-products.component';
 import { NavbarLandingComponent } from './components/navbar-landing/navbar-landing.component';
-import { NavbarProductsComponent } from './components/navbar-products/navbar-products.component'
+import { NavbarProductsComponent } from './components/navbar-products/navbar-products.component';
+import { DirectAccessComponent } from './components/direct-access/direct-access.component'
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { NavbarProductsComponent } from './components/navbar-products/navbar-pro
     AllProductsComponent,
     NavbarLandingComponent,
     NavbarProductsComponent,
+    DirectAccessComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],
