@@ -7,14 +7,25 @@ body,
 html,
 div {
   font-family: 'my_GlacialIndifference_font';
+  font-size: 22px;
+  color: #284f2b;
 }
+body {
+  background-color: #dad7cd;
+}
+
+b {
+  font-weight: 800;
+}
+
 .title {
+  color: #e74629;
+  font-weight: 700;
   font-size: 30px;
   font-family: 'my_BergenSans_font';
 }
 
 .subtitle {
-  font-size: 16px;
   text-align: justify;
   text-justify: inter-word;
 }
@@ -23,7 +34,6 @@ div {
   cursor: pointer;
 }
 
-body {
-  color: #ffff;
-  background-color: #110f09;
+.red {
+  color: #e74629;
 }

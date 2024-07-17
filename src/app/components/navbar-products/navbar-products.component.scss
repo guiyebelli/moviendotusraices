@@ -1,10 +1,11 @@
 .navbar {
   .nav-link {
-    color: #ffff !important;
+    // color: #ffff !important;
+    color: #e74629 !important;
     font-size: 25px;
     cursor: pointer;
   }
-  background-color: #110f09 !important;
+  // background-color: #110f09 !important;
 }
 
 @media (min-width: 767px) {
@@ -14,5 +15,5 @@
 }
 
 .navbar-toggler {
-  background-color: #ffff;
+  background-color: #dad7cd;
 }

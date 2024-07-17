@@ -9,11 +9,22 @@
   font-size: 25px;
 }
 
-.title {
-  color: #e74629;
-}
+// .title {
+//   color: #e74629;
+// }
 
 .container-data {
   padding-top: 20px;
   padding-bottom: 20px;
+}
+
+.consider {
+  b {
+    text-decoration: underline !important;
+  }
+  .subtitle {
+    font-style: italic;
+    font-weight: 800;
+    font-size: 18px;
+  }
 }

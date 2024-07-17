@@ -16,7 +16,7 @@ export class Product {
       {
         name: 'ARMADO DE CARPETA',
         description:
-          '<p>Nos encargamos de reunir toda la documentación necesaria, desde tu avo hasta vos, asegurando que cumpla con los requisitos del comune/consulado. Evitando errores y pérdidas de tiempo durante tu proceso de reconocimiento para la ciudadanía italiana.</p>',
+          '<p>Nos encargamos de reunir toda la documentación necesaria, desde tu avo hasta vos, asegurando que cumpla con los requisitos del comune/consulado.</p>',
         router: '/services/file',
         icon: 'assets/images/icons/backpack-green.png',
       },
