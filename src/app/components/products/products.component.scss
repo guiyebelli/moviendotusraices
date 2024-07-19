@@ -1,7 +1,6 @@
 section {
   background-color: #ffff;
   background-image: url('/assets/images/productos.png');
-  // background-image: url('/assets/images/productos4.jpg');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -13,6 +12,10 @@ section {
 
 .link {
   cursor: pointer;
+}
+
+.title {
+  color: #284f2b;
 }
 
 .title-card {
@@ -66,13 +69,13 @@ section {
 
 /* Style the front side */
 .flip-box-front {
-  background-color: #dad7cd;
+  background-color: #ebebeb;
   color: black;
 }
 
 /* Style the back side */
 .flip-box-back {
-  background-color: #dad7cd;
+  background-color: #ebebeb;
   color: black;
   // color: white;
   transform: rotateY(180deg);
