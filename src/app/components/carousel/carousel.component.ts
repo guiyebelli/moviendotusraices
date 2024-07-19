@@ -23,6 +23,10 @@ export class CarouselComponent implements OnInit {
       img: './assets/images/carousel/4.png',
       alt: 'carousel-moviendo-tus-raices-4',
     },
+    {
+      img: './assets/images/carousel/5.png',
+      alt: 'carousel-moviendo-tus-raices-5',
+    },
   ]
   imagesMobile = [
     {
