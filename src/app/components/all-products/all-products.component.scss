@@ -1,17 +1,11 @@
+.header-container {
+  padding-top: 70px;
+}
 .header {
-  background: url('/assets/images/servicios1.png');
+  background: url('/assets/images/nuestros-servicios.png');
   background-size: cover;
   height: 500px;
 }
-
-.header-link {
-  padding-top: 20px;
-  font-size: 25px;
-}
-
-// .title {
-//   color: #e74629;
-// }
 
 .container-data {
   padding-top: 20px;
@@ -26,5 +20,11 @@
     font-style: italic;
     font-weight: 800;
     font-size: 18px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header {
+    background: url('/assets/images/nuestros-servicios-mobile.png');
   }
 }

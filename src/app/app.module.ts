@@ -14,7 +14,8 @@ import { LandingComponent } from './components/landing/landing.component';
 import { AllProductsComponent } from './components/all-products/all-products.component';
 import { NavbarLandingComponent } from './components/navbar-landing/navbar-landing.component';
 import { NavbarProductsComponent } from './components/navbar-products/navbar-products.component';
-import { DirectAccessComponent } from './components/direct-access/direct-access.component'
+import { DirectAccessComponent } from './components/direct-access/direct-access.component';
+import { CarouselComponent } from './components/carousel/carousel.component'
 
 @NgModule({
   declarations: [
@@ -30,6 +31,7 @@ import { DirectAccessComponent } from './components/direct-access/direct-access.
     NavbarLandingComponent,
     NavbarProductsComponent,
     DirectAccessComponent,
+    CarouselComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, NgbModule],
   providers: [],

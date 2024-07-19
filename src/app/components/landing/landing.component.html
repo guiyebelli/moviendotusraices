@@ -1,28 +1,11 @@
-<div class="container-fluid p-0">
-  <app-header></app-header>
-  <app-navbar-landing (selectOption)="scroll($event)"></app-navbar-landing>
-
-  <hr />
-  <div class="row">
-    <div class="col-12" #home id="home">
-      <app-presentation></app-presentation>
-    </div>
-
-    <div class="col-12" #services id="services">
-      <app-products></app-products>
-    </div>
-
-    <div class="col-12" #city id="city">
-      <app-city></app-city>
-    </div>
-
-    <div class="col-12 pt-5" #contact id="contact">
-      <app-contact></app-contact>
-    </div>
-  </div>
-
-  <app-footer></app-footer>
-</div>
+<app-navbar-landing (selectOption)="scroll($event)"></app-navbar-landing>
+<app-header></app-header>
+<app-carousel></app-carousel>
+<app-presentation #home id="home"></app-presentation>
+<app-products #services id="services"></app-products>
+<app-city #city id="city"></app-city>
+<app-contact #contact id="contact"></app-contact>
+<app-footer></app-footer>
 <div class="container-direct-access">
   <app-direct-access></app-direct-access>
 </div>

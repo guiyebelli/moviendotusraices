@@ -1,12 +1,10 @@
-<div class="d-flex justify-content-center mt-3 header pointer" routerLink="/" id="all"></div>
+<div class="header-container" id="all"></div>
+<div class="header pointer" routerLink="/" id="all"></div>
 <app-navbar-products (selectOption)="scroll($event)"></app-navbar-products>
-<hr />
 
-<div class="container consider py-3">
-  <div class="row">
+<div class="container consider">
+  <div class="row py-3">
     <div class="col-12">
-      <!-- <p class="title">TENE EN CUENTA</p> -->
-
       <p class="subtitle">
         <b>Tene en cuenta</b>
         que para poder iniciar con este servicio, necesitas contar con información de tu árbol familiar. Datos necesarios del
@@ -21,8 +19,7 @@
   </div>
 </div>
 
-<hr />
-<div class="container" id="all">
+<div class="container">
   <div class="row">
     <div class="col-12 container-data" #searchProceedings id="searchProceedings">
       <p class="title">BÚSQUEDA DE ACTAS</p>

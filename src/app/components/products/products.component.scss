@@ -1,17 +1,19 @@
+section {
+  background-color: #ffff;
+  background-image: url('/assets/images/productos5.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .icon {
   height: 80px;
   // width: 60px;
 }
 
-// .title {
-//   // color: #1d1d1b;
-//   // font-size: 20px;
-//   line-height: 30px;
-// }
-
 .link {
   cursor: pointer;
 }
+
 .title-card {
   font-size: 20px;
 }
@@ -23,19 +25,6 @@
 .header {
   padding-top: 40px;
   padding-bottom: 30px;
-  // .title {
-  //   // color: #110f09;
-  // }
-  // .subtitle {
-  //   // color: #110f09;
-  //   font-size: 16px;
-  // }
-}
-.section-container {
-  background-color: #ffff;
-  background-image: url('/assets/images/productos5.png');
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
